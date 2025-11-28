@@ -295,7 +295,6 @@ export default function Portfolio() {
 
               {/* Main Circle Container */}
               <div className="relative w-full h-full rounded-full border border-slate-800/50 bg-slate-950/80 backdrop-blur-sm overflow-hidden shadow-2xl flex items-center justify-center group ring-1 ring-white/5">
-
                 {/* Avatar Image */}
                 <div className="absolute inset-2 rounded-full overflow-hidden">
                   {/* Replace with your actual image URL */}
@@ -305,25 +304,46 @@ export default function Portfolio() {
                     className="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
+              </div>
 
-                {/* Floating Tech Badges */}
-                <div className="absolute top-12 -right-2 bg-slate-900/90 backdrop-blur-md border border-slate-700/50 px-4 py-2 rounded-xl shadow-xl animate-bounce" style={{ animationDuration: '4s' }}>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></div>
-                    <span className="text-xs font-bold text-slate-200">GenAI</span>
-                  </div>
+              {/* Floating Tech Badges - Moved outside to prevent clipping */}
+              {/* Top Right: GenAI */}
+              <div className="absolute top-12 -right-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/50 px-4 py-2 rounded-xl shadow-xl animate-bounce" style={{ animationDuration: '4s' }}>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></div>
+                  <span className="text-xs font-bold text-slate-200">GenAI</span>
                 </div>
-                <div className="absolute bottom-24 -left-8 bg-slate-900/90 backdrop-blur-md border border-slate-700/50 px-4 py-2 rounded-xl shadow-xl animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '4.5s' }}>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></div>
-                    <span className="text-xs font-bold text-slate-200">LLMs</span>
-                  </div>
+              </div>
+
+              {/* Bottom Left: LLMs */}
+              <div className="absolute bottom-20 -left-6 bg-slate-900/90 backdrop-blur-md border border-slate-700/50 px-4 py-2 rounded-xl shadow-xl animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '4.5s' }}>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></div>
+                  <span className="text-xs font-bold text-slate-200">LLMs</span>
                 </div>
-                <div className="absolute bottom-10 right-12 bg-slate-900/90 backdrop-blur-md border border-slate-700/50 px-4 py-2 rounded-xl shadow-xl animate-bounce" style={{ animationDelay: '0.8s', animationDuration: '5s' }}>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
-                    <span className="text-xs font-bold text-slate-200">RAG</span>
-                  </div>
+              </div>
+
+              {/* Bottom Right: RAG */}
+              <div className="absolute bottom-20 -right-6 bg-slate-900/90 backdrop-blur-md border border-slate-700/50 px-4 py-2 rounded-xl shadow-xl animate-bounce" style={{ animationDelay: '0.8s', animationDuration: '5s' }}>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+                  <span className="text-xs font-bold text-slate-200">RAG</span>
+                </div>
+              </div>
+
+              {/* Top Left: Multi Agents Systems */}
+              <div className="absolute top-12 -left-10 bg-slate-900/90 backdrop-blur-md border border-slate-700/50 px-4 py-2 rounded-xl shadow-xl animate-bounce" style={{ animationDelay: '2s', animationDuration: '5.5s' }}>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-orange-400 animate-pulse"></div>
+                  <span className="text-xs font-bold text-slate-200">Multi Agents</span>
+                </div>
+              </div>
+
+              {/* Bottom Center: Research */}
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-slate-900/90 backdrop-blur-md border border-slate-700/50 px-4 py-2 rounded-xl shadow-xl animate-bounce" style={{ animationDelay: '1s', animationDuration: '6s' }}>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-pink-400 animate-pulse"></div>
+                  <span className="text-xs font-bold text-slate-200">Research</span>
                 </div>
               </div>
             </div>

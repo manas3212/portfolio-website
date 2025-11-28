@@ -300,7 +300,7 @@ export default function Portfolio() {
                 <div className="absolute inset-2 rounded-full overflow-hidden">
                   {/* Replace with your actual image URL */}
                   <img
-                    src="/profile_updated.jpg"
+                    src={`${import.meta.env.BASE_URL}profile_updated.jpg`}
                     alt="Manas Jain"
                     className="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700"
                   />
